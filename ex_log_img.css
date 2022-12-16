@@ -1,0 +1,35 @@
+.ou{margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    background-color: aquamarine;}
+
+.bt{
+    margin-left: 25px;
+}
+.ou1{
+    float: left;
+    margin-top: 20px;
+    background-color: pink;
+    width: 200px;
+    font-size: 20px;
+    height: 500px;
+}
+
+.li{margin: 30px;
+    padding-top:50px;
+    margin: 30px;
+    padding-top:50px;
+}
+
+.img_sty{margin-left: 20px;
+    background-color: aqua;
+    height: 500px;
+    width: 1000px;
+    float: left;
+    margin-top: 20px;}
+
+.img{
+    width: 1000px;
+    height: 500px;
+}
+

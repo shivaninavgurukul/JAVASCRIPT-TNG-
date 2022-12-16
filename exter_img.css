@@ -1,0 +1,29 @@
+.h{background-color: darkmagenta;
+    text-align: center;
+    margin-top: 15px;
+    color: aliceblue;
+}
+
+
+.fi_d{
+    background-color: aqua;border: 2px solid black; 
+    margin-top: 16px;
+    height: 570px;
+    width: 1250px;
+}
+.in_d{margin-left: 20px;
+    background-color: blue;
+    height: 40px;width: 40px;
+    float: left;
+    margin-top: 100px;
+}
+.in_di{
+    margin-left: 280px;
+    background-color:blue;
+    height: 20px;width: 30px;
+    float:left;margin-top: 100px;
+}
+.img{
+    width: 270px;
+    height: 270;
+}
