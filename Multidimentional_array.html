@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var ary=[
+            ["mona",21,"female","Bsc"],
+            ["shivi",22,"female","Bsc"],
+            ["swati",23,"female","B.com"]
+        ];
+        // document.write(ary[0][3])
+        document.write("<table border='1px' cellspacing='0'")
+        for (var  a=0; a<ary.length;a++){
+            document.write("<tr>")
+            for (var b=0; b<4; b++){
+                document.write("<td>"+ary[a]  [b]+ "</td>");
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

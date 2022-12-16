@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model Demo</title>
+</head>
+<body>
+    <div>
+        <button onclick="openwin()">Open Window</button>
+        <button onclick="closewin()">Close Window</button>
+        <button onclick="alertwin()">Alert</button>
+        <button onclick="promptwin()">Prompt</button>
+        <button onclick="confirmwin()">Confirm</button>
+    </div>
+    <script>
+        var windowObj;var username;
+
+        function openwin(){
+            windowObj=window.open("https://www.youtube.com/watch?v=oqyi4YDKRvk");
+        }
+        function closewin(){
+            windowObj=window.close();
+        }
+        function alertwin(){
+            username="monika";
+            window.alert("Good Afternoon ,"+ username);
+            alert("Thankyou");
+        }
+        function promptwin(){
+            var name= prompt("Enter your name: ");
+            alert("your name is,"+ name);
+        }
+        function confirmwin(){
+            var result=confirm("are you sure to save the credential");
+            if (result==true)
+                alert("Saved Successfully ");
+            else
+                alert("Save failed")
+        }
+
+    </script>
+</body>
+</html>

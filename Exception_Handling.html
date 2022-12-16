@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        // function getMonthName(mo) {
+        // mo=mo-1;
+        // var months=new 
+        // Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct"
+        // ,"Nov","Dec");
+        //     if (months[mo] != null) { 
+        //         return months[mo];
+        //     } else { 
+        //         throw(new Error("InvalidMonthNo"));
+        //     }
+        // } 
+        // try {// statements to try 
+        //     monthName=getMonthName(1) // function could 
+        // throw exception 
+        //     console.log("Month:"+monthName);
+        // } 
+        // catch (e) { 
+        //     document.getElementById("errorMessage").value="Error"
+        // }
+
+        try
+        {
+        throw(new Error("1:Its an error"));
+        }
+        catch(e)
+        {
+        console.log("2 Error handled");
+        }
+        finally
+        {
+        console.log("3 Resource released");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

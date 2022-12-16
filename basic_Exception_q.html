@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exception Handling1</title>
+</head>
+<body>
+    <div>
+        <h3> Exception Handling</h3>
+        Enter number1 <input type="text" id="num1"/>
+        Enter number2 <input type="text" id="num2"/>
+        <button onclick="div()"> Exception1</button>
+    </div>
+    <script>
+        function div(){
+            try{
+                var a=document.getElementById("num1").value;
+                var b=document.getElementById("num2").value;
+                if (b>0){
+                    var c=a/b;
+                    alert("Division is"+c);
+                }
+
+            } catch(e){
+                alert("Exception is"+e.message);
+            }
+            finally{
+                alert("end of exception");
+            }
+        }
+    
+    </script>
+</body>
+</html>

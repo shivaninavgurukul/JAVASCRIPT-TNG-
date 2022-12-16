@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model Demo</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="salutation"><br>
+        <button onclick="greeting()">DOM Write()</button>
+        <button onclick="salutation()">DOM By Id()</button>
+        <button onclick="course()"> DOM By Name()</button>
+        <button onclick="tags()">DOM By Tags()</button>
+        <hr/>
+        <h3>getMonthName</h3>
+        HTML <input type="radio" name="UI" value="html">
+        CSS <input type="radio" name="UI" value="css">
+        JS <input type="radio" name="UI" value="js">
+        ReactJS <input type="radio" name="UI" value="react">
+        <hr/>
+        <output></output>
+    </div>
+    <script>
+        var course=document.getElementsByName("UI");
+        function greeting(){
+            document.write("DOM Hierarchy Learnong model ");
+
+        }
+        function salutation(){
+            var uname = prompt("Enter username");
+            var sal=document.getElementById("salutation").value;
+            alert(sal+","+uname);
+        }
+        function course(){
+            var courses = document.getElementsByName("UI");
+            alert("Total number of courses are :"+
+            courses.length);//length property helps you to get the number of courses
+            for(var i=0;i<courses.length;i++){
+                //alert(courses[i].value +",") ;
+                var coursesvalues = courses[i].value  + ",";
+                alert(coursesvalues);
+            }//alert(courses);
+
+        }
+
+        function tags(){
+            var output=document.getElementsByName("OUTPUT");
+            output[0].value=("No of courses" ,course.length ,"End of tag element ");
+        }
+        
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learning DOM</title>
+<script>
+function greeting(){
+document.write("Welcome to Learning DOM");
+}
+</script>
+</head>
+<body>
+<button 
+onclick="greeting()">Greeting</button
+>
+</body>
+</html>

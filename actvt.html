@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <div id="reset">
+        <h3>Registration form</h3><br><br>
+        Enter User Name <input type="text" id="name"/><br><br>
+        Enter Password <input type="password" id="password"/><br><br>
+        confirm Password <input type="password" id="confirm password"/><br><br>
+        Age <input type="number" id="Age"/><br><br>
+        Enter DOB <input type="date"/><br><br>
+        Enter Stream <input type="text"/><br><br>
+        <button onclick="Login()">Login</button>
+        <button onclick="reset()" type="reset">Reset</button>
+    </div>
+    <script>
+        function Login(){
+            try{
+                var password=document.getElementById("password").value;
+                var conform_password=document.getElementById("confirm password").value;
+                var Age=document.getElementById("age").value;
+
+                
+                if (password===conform_password){
+                    console.log(password);
+                    if (Age>=18 & Age<=24){
+                        alert("Successfully Login");
+
+                    }
+                    else{
+                        document.write("check your age")
+                    }
+                }else{
+                    document.write("check your password");
+                }
+            
+            }catch(e){
+                    alert(e.message);
+            }
+            finally{
+                alert("Thanks");
+            }
+        }
+        function reset(){
+            document.getElementById("reser").reset().value;
+        }
+    </script>
+</body>
+</html>
