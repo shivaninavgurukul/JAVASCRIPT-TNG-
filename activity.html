@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Ragistration form</title>
+</head>
+
+<body style="background-color:antiquewhite;">
+    <h1 style="text-align:center;color: blueviolet;">Welcome to registration form</h1>
+    <form style="text-align: center;" id="myform">
+        User Name : <input type="text" id="name"><br><br>
+        Password: <input type="password" id="password"><br><br>
+        conform_password : <input type="password" id="conform_password"><br><br>
+        Age : <input type="number" id="age"><br><br>
+        Dath Of Birth: <input type="date"><br><br>
+        Stream : <input type="radio">Science
+        <input type="radio"> Art <input type="radio">Math<br><br>
+        <button onclick="Login()">Register</button>
+        <button onclick="reset()" type="reset">Reset</button>
+    </form>
+    <script type="text/javascript">
+        function Login() {
+            try {
+                var password = document.getElementById("password").value;
+                var conform_password = document.getElementById("conform_password").value;
+                var Age = document.getElementById("age").value;
+               
+                 console.log(password)
+                 console.log(conform_password)
+                 console.log(Age)
+
+                if (password === conform_password) {
+
+                    if (Age >= 18 & Age <= 24) {
+                        alert("Successfully Login")
+                    } else {
+                        alert("check your age")
+                    }
+                } else {
+                    alert("check your password")
+                }
+
+            }
+            catch (e) {
+                alert(e.message)
+            }
+            finally {
+                alert("Thanks for Registration")
+            }
+            function reset() {
+                document.getElementById("myform").reset();
+            }
+        }
+    </script>
+</body>
+
+</html>
